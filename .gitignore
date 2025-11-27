@@ -1,0 +1,20 @@
+# Ignore build artifacts
+paramsyouseek.exe
+*.exe
+
+# Ignore scan outputs
+*.txt
+*.log
+
+# Ignore OS junk
+.DS_Store
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.code-workspace
+
+# Go build cache
+bin/
+build/
+vendor/
