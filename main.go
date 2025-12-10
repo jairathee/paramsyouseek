@@ -38,6 +38,11 @@ func main() {
 	flag.BoolVar(&opts.Headless, "hl", false, "Headless mode (render JS; basic support)")
 	flag.BoolVar(&opts.Headless, "headless", false, "Headless mode (alias)")
 
+	flag.BoolVar(&opts.Guess, "guess", false, "Generate guessed parameters")
+	flag.BoolVar(&opts.GuessTest, "guesstest", false, "Test guessed parameters for reflections")
+
+	flag.BoolVar(&opts.Robots, "robots", false, "Parse robots.txt and sitemap.xml for URLs")
+
 	flag.Var(&opts.HeaderFlags, "H", "Header \"Name: Value\" (can be repeated)")
 	flag.Var(&opts.HeaderFlags, "header", "Header \"Name: Value\" (alias)")
 
